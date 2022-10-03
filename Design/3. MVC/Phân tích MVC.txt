@@ -1,0 +1,31 @@
+
+Danh sách view:
+1. View user:
+- Đăng nhập, đăng ký, quên MK, đổi MK
+- Home
+- View/Edit profile
+- FindUser
+- ViewAnnouncement
+2. View admin:
+- AdminHome
+- Manage account view
+- Manage production view
+- Manage receipt view
+3. Provider view:
+- Home
+- Manage book respository view
+- Manage book detail view
+- Manage receipt list view
+- Manage receipt detail view
+- History of sell view
+4. Customer view:
+- Home
+- Search Book View
+- Manage cart view
+- Respository view
+- Book detail view
+- Book comment view
+- Receipt buy book view
+- Manage receipt list view
+- Manage receipt detail view
+- History of buy view

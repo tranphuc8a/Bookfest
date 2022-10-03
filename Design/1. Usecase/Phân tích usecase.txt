@@ -1,0 +1,48 @@
+1. Tên đề tài: Trang web bán sách online Bookfest
+2. Phân tích use-case:
+a) Tác nhân:
+- User:
+  + Admin: Quản trị viên
+  + Provider: Chủ cửa hàng bán sách
+  + Customer: Khách hàng mua sách
+b) Usecase cho từng tác nhân:
+- User:
+  + Đăng nhập, đăng xuất, quên MK, đổi MK, đăng ký
+  + Quản lý Profile: Update
+  + Tìm kiếm user khác, theo dõi, kết bạn, [nhắn tin]
+  + Xem Profile của user khác
+  + Thông báo (tình trạng đơn hàng, tình trạng sản phẩm)
+- Admin:
+  + Manage account: Block, unblock, đổi MK, xóa tài khoản
+    Thêm admin khác (ban đầu có 1 admin mặc định: TTK: tranphuc8a@gmail.com, MK: admin)
+  + Manage production: Xem, thêm, sửa, xóa danh sách sản phẩm
+    Kiểm duyệt: Đánh dấu sản phẩm chưa đủ điều kiện để bán, cần cập nhật thêm thông tin sản phầm
+  + Manage đơn mua:
+    Kiểm soát danh sách đơn mua
+  + Tìm kiếm: user, sản phẩm, đơn mua
+- Provider:
+  + Quản lý kho sách: Xem, thêm, sửa, xóa sách
+  + Quản lý đơn hàng:
+    Xem danh sách đơn, xem chi tiết đơn hàng cụ thể
+    Hủy đơn, Cập nhật đơn hàng
+  + Thống kê lịch sử bán hàng
+- Customer:
+  + Tìm kiếm sách:
+    Tìm kiếm, xem danh sách, chọn sản phẩm trong danh sách
+  + Quản lý giỏ hàng:
+    Xem sản phẩm trong giỏ hàng
+    Thêm sản phẩm vào giỏ hàng
+    Xóa sản phẩm khỏi giỏ hàng
+    Mua sản phẩm trong giỏ hàng
+  + Quản lý mua sách:
+    Xem chi tiết sản phẩm, thêm vào giỏ hàng
+    Mua sản phẩm, điền thông tin đơn hàng
+    Đánh giá sản phẩm
+  + Xem gian hàng cửa hàng khác:
+    Xem danh sách sản phẩm
+  + Quản lý đơn hàng: đơn đã mua, đang mua
+    Xem danh sách đơn, hủy đơn, xem chi tiết đơn, chỉnh sửa đơn
+    Hoàn thành đơn hàng
+  + Thống kê lịch sử mua hàng
+
+

@@ -1,0 +1,13 @@
+Trạng thái		Consumer						Provider
+
+chưa submmit	điền, mua, hủy					null
+sumitted		thay đổi thông tin				check, accept/deny
+delivering		chỉ xem, xác nhận, 				only xem
+				khiếu nại/hủy nếu quá hạn		
+bị khiếu nại	rút khiếu nại->success/failed	null, chủ động liên hệ consumer để đàm phán
+success|failed	xem, mua lại					only xem
+
+
+
+
+

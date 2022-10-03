@@ -1,0 +1,64 @@
+....
+
+Lần 1. 17:38/22/9/2022
+1. Gộp chung customer và provider lại thành 1 page duy nhất
+- Tác động:
+  + File controller customer.php:
+  	đổi tên: user.php
+  	đổi nội dung loadView
+  + Đổi các header và domain tương ứng: 
+  + Đổi tên file views customerHome thành userHome
+  + Xóa file view providerHome.php
+  + Sửa controller Welcome.php:
+  	Sửa các header
+  	Xóa method customer
+2. Sửa lại route cho view repository
+	Đổi tên supportview respository.php thành repository.php
+	Đổi tên controller respositoryController thành repositoryController trong home.js
+3. Tiếp tục tính năng tìm kiếm sản phẩm trong productController / home.js
+	Cập nhật Api controller và model Book
+	Cập nhật supportview product
+4. Cập nhật userHome.php và 1.css
+5. Cài đặt tính năng kho hàng
+	home.js
+	supportView repository
+	controller api
+	model Repository
+
+
+
+Lần 2. 12:45/23/9/2022
+1. cập nhật class full file 1.css
+2. Cập nhật tính năng addition trong support.view/repository.php
+	và home.js
+
+Cập nhật database 18:36 29/9/2022
+1. Bảng BOOK_COMMENT
+	Thêm trường id
+	Đổi trường id cũ thành productid
+2. Bảng CART
+	Đổi tên bookid thành id
+	Xóa trường unitcost
+3. Bảng receive_product
+	Đổi tên bookid thành productid
+	Xóa trường unicost
+4. Bảng receipt
+	Thêm trường: address, cost, message, during(hours)
+
+
+Cập nhật 12:11 30/9/2022
+Data base: Chuyển về 1 hóa đơn chỉ mua 1 loại sản phẩm
+- Xóa bảng receipt_production
+- Chuyển bảng receipt về các trường:
+	+ id, productid, quantity, cost, buyemail, sellemail, address, message, time, during, state
+	+ Các trường buộc khác null: id, productid, quantity, cost, buyemail, sellemail, state
+	+ Các trường có thể bằng null: address, message, time, during (khi chưa submit)
+	+ Sau khi submit, các trường có thể bằng null: message, during
+	+ Sau khi accept, các trường có thể bằng null: message
+- Receipt object:
+	+ receipt: *
+	+ buy(buyemail): * from user, profile
+	+ sell(sellemail): * from user, profile
+	+ product: * from book, book_info
+
+
