@@ -4,6 +4,6 @@
 - Backend: PHP-Codeigniter, MySQL
 2. Config project:
 - Install XAMPP/InstantWP/... and move this project to htdocs folder
-- Create database in Design/database/createDB.sql
-- Config config.php and database.php in application/config/
+- Create database with Design/database/createDB.sql
+- Config 2 files config.php and database.php in application/config/
 
